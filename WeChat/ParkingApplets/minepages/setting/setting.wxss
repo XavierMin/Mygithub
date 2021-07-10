@@ -1,0 +1,56 @@
+/* pages/setting/setting.wxss */
+.settingpage{
+  height: 100%;
+  width: 100%;
+  background-color: #E3E3E3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.settingInfoList{
+  width: 100%;
+  background-color: white;
+}
+.settingInfoList:last-child{
+  border: 0;
+}
+.settingInfoListContent{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: 80rpx;
+  background-color: white;
+  padding: 20rpx 0 0 20rpx;
+  border-bottom: 1px solid #EBEBEB;
+  margin: 0 20rpx 0 20rpx;
+}
+.settingInfoText{
+  display: inline-block;
+  align-items: center;
+  height: 80rpx;
+  vertical-align: middle;
+  font-size: 37rpx;
+  margin-top: 10rpx;
+}
+.settingInfoTexta{
+  display: inline-block;
+  align-items: center;
+  height: 80rpx;
+  vertical-align: middle;
+  font-size: 33rpx;
+  color: gray;
+  margin-top: 10rpx;
+}
+/* 退出登录按钮 */
+.quitBtn{
+  width: 65%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rpx;
+  margin-top: 650rpx;
+}
+

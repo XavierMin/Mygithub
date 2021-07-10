@@ -1,0 +1,28 @@
+/* indexpages/findcar/findcar.wxss */
+.map_container {
+  height: 550px;
+  width: 100%;
+}
+.map {
+  height: 100%;
+  width: 100%;
+}
+.list-guide{
+  display: flex;  
+  flex-direction: row; 
+  align-items: center;
+  justify-content:space-around;
+  border-top: 1px solid #ededed;
+  height: 100rpx;
+}
+.list-guide-imgae{
+  height: 55rpx;
+  width: 55rpx;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.list-guide-text{
+  vertical-align: middle;
+  line-height: 90rpx;
+  font-size: 35rpx;
+}

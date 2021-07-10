@@ -1,0 +1,43 @@
+<!--indexpages/calculator/calculator.wxml-->
+<view class="container">
+
+<!--screen是上面整个显示屏，cal-view用来显示式子，result-view用来显示结果-->
+<view class="screen">
+  <view class='cal-view'>10+12*2</view>
+  <view class="result-view">34</view>
+</view>
+
+<view class='btns'>
+<!--将按钮分成四列，看着上面的图片差不多就可以想象出来啦-->
+  <view class='btnGroup'>
+    <view class="btnItem btnColor acbtn">AC</view>
+    <view class="btnItem btnColor">7</view>
+    <view class="btnItem btnColor">4</view>
+    <view class="btnItem btnColor">1</view>
+    <view class="btnItem btnColor">.</view>
+  </view>
+
+  <view class="btnGroup">
+    <view class="btnItem btnColor">%</view>
+    <view class="btnItem btnColor">8</view>
+    <view class="btnItem btnColor">5</view>
+    <view class="btnItem btnColor">2</view>
+    <view class="btnItem btnColor">0</view>
+  </view>
+
+  <view class="btnGroup">
+    <view class="btnItem btnColor">÷</view>
+    <view class="btnItem btnColor">9</view>
+    <view class="btnItem btnColor">6</view>
+    <view class="btnItem btnColor">3</view>
+    <view class="btnItem btnColor">DEL</view>
+  </view>
+
+  <view class="btnGroup">
+    <view class="btnItem btnColor">×</view>
+    <view class="btnItem btnColor">-</view>
+    <view class="btnItem btnColor">+</view>
+    <view class="btnItem btnColor equal">=</view>
+  </view>
+</view>
+</view>

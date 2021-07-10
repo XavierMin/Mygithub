@@ -1,0 +1,23 @@
+<!--pages/setting/setting.wxml-->
+<view class='settingpage'>
+  <view class='settingInfoList'>
+    <view class='settingInfoListContent'>
+      <view class='settingInfoText'>账号安全</view>
+      <view class='settingInfoTexta'>></view>
+    </view>
+    <view class='settingInfoListContent'>
+      <view class='settingInfoText'>服务协议</view>
+      <view class='settingInfoTexta'>></view>
+    </view>
+    <view class='settingInfoListContent'>
+      <view class='settingInfoText'>意见反馈</view> 
+      <view class='settingInfoTexta'>></view>
+    </view>
+    <view class='settingInfoListContent'>
+      <view class='settingInfoText'>关于我们</view> 
+      <view class='settingInfoTexta'>></view>
+    </view>
+  </view>
+  <button class="quitBtn" bindtap='logout' style="background: #6194f2; color: #fff;" type="default">退出登录</button>
+</view>
+

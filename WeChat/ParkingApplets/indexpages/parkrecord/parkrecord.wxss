@@ -1,0 +1,103 @@
+page{
+  background: #E3E3E3;
+  height: 100%;
+}
+.recordlist{
+  height: 350rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20rpx;
+  background-color: #ffffff;
+  margin: 15rpx 15rpx 15rpx 15rpx;
+  box-shadow: 0rpx 15rpx 10rpx -15rpx;
+}
+.recordinfo{
+  display: flex;
+  flex-direction: column;
+  width: 500rpx;
+  margin-left: 30rpx;
+}
+.chepai{
+  font-size: 40rpx;
+  font-weight: 600;
+  color: black;
+  margin-top: -80rpx;
+  margin-bottom: 10rpx;
+}
+.parkingname{
+  font-size: 30rpx;
+  font-weight: 500;
+  color: black;
+  justify-content: flex-start;
+  margin-top: 10rpx;
+}
+.addr{
+  font-size: 25rpx;
+  color: black;
+  justify-content: flex-start;
+  margin-top: 15rpx;
+}
+.time{
+  font-size: 25rpx;
+  color: black;
+  justify-content: flex-start;
+  margin-top: 15rpx;
+}
+.price{
+  display: flex;
+  flex-direction: row;
+  margin-right: 40rpx;
+}
+.number{
+  font-size: 60rpx;
+  color: #f09873;
+  text-align: center;
+  align-items: center;
+  margin-top: -20rpx;
+  
+}
+.yuan{
+  font-size: 25rpx;
+  color: black;
+  margin-top: 15rpx;
+  margin-left: 10rpx;
+}
+
+.threeBtn{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: -80rpx;
+}
+.functionBtn{
+  width: 145rpx;
+  height: 45rpx;
+  font-size: 22rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20rpx;
+}
+/* 底部滚动列表 */
+.contentBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ }
+ .tab-right {
+  width: 100%;
+  margin: 20rpx auto;
+  height: 1150rpx;
+ }
+ .right-item {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+ }
+ .content-item {
+  height: 140rpx;
+  width: 100%;
+ }
+

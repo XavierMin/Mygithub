@@ -1,0 +1,51 @@
+@import '/pages/template/list-discover.wxss';
+.carnewslist{
+  display: block;
+  flex-direction: column;
+}
+.allKinds{
+  position: fixed;
+  top: 0rpx;
+  width: 97%;
+  height: 160rpx;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20rpx;
+  background-color: #f5f8ff;
+  margin: 0 15rpx 15rpx 15rpx;
+  box-shadow: 0rpx 15rpx 10rpx -15rpx;
+}
+.kinds{
+  text-align: center;
+  width:25%;
+  height:100rpx;
+}
+.kinds image{
+  margin-top: 30rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+.kindtext{
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5rpx;
+}
+.discover{
+  height: 100%;
+  width: 100%;
+  margin-top: 150rpx;
+  padding-top:1rpx;
+}
+/*解决高度塌陷开始*/
+.clearfix:after{
+    /* 必须设置一个空的congtent,否则不起作用  */ 
+    content: "";
+    /* 转换成块元素  */
+    display: block;
+    clear: both;
+}
+/*为了兼容IE6*/
+.clearfix{zoom:1}
+/*解决高度塌陷结束*/
+
+

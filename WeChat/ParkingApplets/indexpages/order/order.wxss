@@ -1,0 +1,116 @@
+/* pages/order/order.wxss */
+.picker{
+  text-align: center;
+  font-size: 35rpx;
+  color: gray;
+  margin-top: -15rpx;
+}
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: #E3E3E3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.parkingInfo{
+  width: 100%;
+  height: 203rpx;
+  background-color: white;
+  margin-top: 30rpx;
+}
+.parkingInfoStyle{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: 80rpx;
+  background-color: white;
+  padding: 20rpx 0 0 20rpx;
+  border-bottom: 1px solid #EBEBEB;
+  margin: 0 20rpx 0 20rpx;
+}
+.parkInfoText{
+  display: inline-block;
+  align-items: center;
+  height: 80rpx;
+  vertical-align: middle;
+  font-size: 37rpx;
+  font-weight: 500;
+  margin-top: 10rpx;
+}
+.parkInfoList{
+  width: 100%;
+  background-color: white;
+  margin-top: 30rpx;
+}
+.parkInfoList:last-child{
+  border: 0;
+}
+.parkInfoListContent{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: 80rpx;
+  background-color: white;
+  padding: 20rpx 0 0 20rpx;
+  border-bottom: 1px solid #EBEBEB;
+  margin: 0 20rpx 0 20rpx;
+}
+.couSetting{
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  margin-top: 30rpx;
+}
+.couSettingStyle{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: 80rpx;
+  background-color: white;
+  padding: 20rpx 0 0 20rpx;
+  border-bottom: 1px solid #EBEBEB;
+  margin: 0 20rpx 0 20rpx;
+}
+.tips{
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  margin-top: 30rpx;
+}
+.tipsInfo{
+  display: flex;
+  align-items: center;
+  height: 50rpx;
+  vertical-align: middle;
+  font-size: 30rpx;
+  font-weight: 500;
+  margin: 0 10rpx 15rpx 40rpx;
+}
+.tipsInfoText{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 65rpx;
+  vertical-align: middle;
+  font-size: 28rpx;
+  color: gray;
+  margin: 10rpx 0 0 40rpx;
+}
+/* 立即预约按钮 */
+.orderBtn{
+  width: 50%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20rpx;
+  margin-top: 50rpx;
+}
+

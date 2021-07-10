@@ -1,0 +1,71 @@
+<!--pages/payment/payment.wxml-->
+<view class='paypage'>
+  <view class='parkInfoList'>
+    <view class='parkInfoListContent'>
+      <image class="parkImg" src='../../static/parking.png'></image>
+      <picker bindchange="bindParkChange" value="{{parkindex}}" range-key='{{"parkname"}}' range="{{parkArray}}" mode="selector">  
+        <view class="picker">{{parkindex != "请选择停车场" ? parkArray[parkindex].parkname : "请选择停车场"}} ></view>
+      </picker> 
+    </view>
+  </view>
+  
+  <view class='parkInfoText'>请输入车牌号</view>
+
+  <view class="page">
+    <!-- 车牌号码输入框 -->
+    <view class="carNumber">
+      <view class="weui-cells__title">请输入您要添加的车牌号码</view>
+      <!-- 车牌号头两位 -->
+      <view class="carNumber-items">
+        <view class="carNumber-items-box" bindtap='openKeyboard'>
+          <view class="carNumber-items-province carNumber-items-box-list">{{carnum[0] || ''}}</view>
+          <view class="carNumber-items-En carNumber-items-box-list">{{carnum[1] || ''}}</view>
+        </view>
+        <!-- 常规 -->
+        <view class="carNumber-item" bindtap='openKeyboard'>{{carnum[2] || ''}}</view>
+        <view class="carNumber-item" bindtap='openKeyboard'>{{carnum[3] || ''}}</view>
+        <view class="carNumber-item" bindtap='openKeyboard'>{{carnum[4] || ''}}</view>
+        <view class="carNumber-item" bindtap='openKeyboard'>{{carnum[5] || ''}}</view>
+        <view class="carNumber-item" bindtap='openKeyboard'>{{carnum[6] || ''}}</view>
+        <!-- 新能源 -->
+        <view class="carNumber-item {{showNewPower ? '': 'carNumber-item-newpower'}}">
+          <view wx:if="{{!showNewPower}}" bindtap='showPowerBtn'>
+            <view class="carNumber-newpower-add">+</view>
+            <view style="font-size:12px;">新能源</view>
+          </view>
+          <view wx:if="{{showNewPower}}" bindtap='openKeyboard'>
+            {{carnum[7]}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 虚拟键盘 -->
+    <view class="keyboard" hidden='{{!KeyboardState}}'>
+      <view class="keyboardClose">
+      <view class="keyboardClose_btn1" bindtap='deleteAll'>清空</view>
+        <view class="keyboardClose_btn2" bindtap='closeKeyboard'>关闭</view>
+      </view>
+      <!-- 省份简写键盘 -->
+      <view class="keyboard-item" hidden="{{carnum[0]}}">
+        <view class="keyboard-line" wx:for="{{provinces}}" wx:key="index">
+          <view class="keyboard-btn" wx:for="{{item}}" wx:key="index" data-val="{{itemlist}}" wx:for-item="itemlist" bindtap='bindChoose'>{{itemlist}}</view>
+        </view>
+        <view class="keyboard-del" bindtap='bindDelChoose'>
+          <text class="font_family icon-shanchu keyboard-del-font">←</text>
+        </view>
+      </view>
+      <!-- 车牌号码选择键盘 -->
+      <view class="keyboard-item iscarnumber" hidden="{{!carnum[0]}}">
+        <view class="keyboard-line" wx:for="{{numbers}}" wx:key="index">
+          <view class="keyboard-btn" wx:for="{{item}}" wx:key="index" data-val="{{itemlist}}" wx:for-item="itemlist" bindtap='bindChoose'>{{itemlist}}</view>
+        </view>
+        <view class="keyboard-del" bindtap='bindDelChoose'>
+          <text class="font_family icon-shanchu keyboard-del-font">←</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <button class="paymentBtn" bindtap='paymentParking' style="background: #6194f2; color: #fff;" type="default">查缴停车费</button>
+</view>
+

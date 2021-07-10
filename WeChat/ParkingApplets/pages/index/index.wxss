@@ -1,0 +1,154 @@
+.searchGoodbg{
+widows: 100%;
+height: 60rpx;
+background-color: #0dacfc;
+padding: 10rpx;
+}
+.searchGood{
+  width: 95%;
+  height: 60rpx;
+  background-color: white;
+  border: 2rmp solid black;
+  border-radius: 20rpx;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 50rpx;
+}
+.sousuo{
+  width:36rpx;
+  height:36rpx;
+  vertical-align:middle;
+}
+.searchText{
+  font-size: 30rpx;
+  color: #9896A5;
+  margin-left: 10rpx;
+}
+.basicInfo{
+  widows: 100%;
+  display: flex;
+  height: 80rpx;
+  background-color: #0dacfc;
+  padding: 10rpx;
+}
+.location{
+  display:flex;
+  padding-left:5px;
+  text-align: center;
+  align-items:center;
+}
+.locaImg{
+  width: 50rpx;
+  height: 60rpx;
+  margin: 10rpx 0 10rpx 60rpx;
+}
+.locaText{
+  text-align: center;
+  font-size: 30rpx;
+  color: white;
+  margin-left: 20rpx;
+}
+.weather{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.weatherup{
+  display:flex;
+  justify-content: center;
+}
+.weatherImg{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 120rpx;
+}
+.weatherText{
+  text-align: center;
+  font-size: 25rpx;
+  color: white;
+  margin-left: 10rpx;
+}
+.tempText{
+  display: flex;
+  margin-left: 120rpx;
+  font-size: 25rpx;
+  color: white;
+}
+.airQuality{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 170rpx;
+}
+.airText{
+  text-align: center;
+  font-size: 25rpx;
+  color: white;
+  margin-bottom: 10rpx;
+}
+.swiperImg{
+  width:100%;
+}
+.row{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 30rpx 0rpx 30rpx 20rpx;
+  text-align: center;
+}
+.one{
+  display: flex;
+  width: 50%;
+  text-align:center;
+}
+.two{
+  display: flex;
+  width: 50%;
+  text-align:center;
+}
+.imgIcon{
+  width: 90rpx;
+  height: 90rpx;
+  margin-top: 40rpx;
+  margin-left: 10rpx;
+}
+.navText{
+  display:flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+}
+.upText{
+  text-align: center;
+  font-size: 35rpx;
+  color: black;
+  width: 140rpx;
+}
+.downText{
+  text-align: center;
+  font-size: 22rpx;
+  color: black;
+  width: 200rpx;
+  margin-top: 10rpx;
+}
+.end{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50rpx;
+  font-size: 20rpx;
+}
+.endLine{
+  background: #6e7173;
+  width: 50rpx;
+  height: 2rpx;
+  margin: 0rpx 15rpx 0rpx 15rpx;
+}
+.endText{
+  text-align: center;
+  color: #6e7173;
+  width: 60rpx;
+}

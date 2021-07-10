@@ -1,0 +1,41 @@
+<!--pages/parkrecord/parkrecord.wxml-->
+<view>
+  <!-- 滚轮 -->
+  <view class='contentBottom'>
+      <swiper class="tab-right" style='background:{{bgColor}};' vertical="true"  interval="2000" display-multiple-items='3'>
+        <view class="right-item">
+          <block wx:key="idx" wx:for='{{records}}'>
+            <swiper-item>
+              <view class='content-item'>
+                <view class='recordlist'>
+                  <view class='recordinfo'>                    
+                    <text class='chepai'>{{item.chepainum}}</text>
+                    <text class='parkingname'>{{item.parkname}}</text>
+                    <text class='addr'>{{item.address}}</text>
+                    <text class='time'>{{item.paytime}}</text>
+                  </view>                  
+                  <view class='price'>
+                    <text class='number'>{{item.num}}</text>                    
+                    <view class='yuan'>元</view>                   
+                  </view>            
+                </view> 
+                <view class="threeBtn">
+                  <button class="functionBtn" style="background: #6194f2; color: #fff;" type="default">申请发票</button>
+                  <button class="functionBtn" style="background: #6194f2; color: #fff;" type="default">客服电话</button>
+                  <button class="functionBtn" style="background: #6194f2; color: #fff;" type="default">删  除</button>
+                </view>                               
+              </view>
+            </swiper-item>
+          </block> 
+        </view>
+      </swiper>
+  </view>
+</view>
+
+
+
+
+
+
+
+

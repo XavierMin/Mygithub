@@ -1,0 +1,176 @@
+/* pages/mycoupon/mycoupon.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  background: #E3E3E3;
+  height: 100%;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+}
+.navbar .item{
+  font-size: 35rpx;
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+  color: gray;
+}
+.navbar .item.active{
+  font-size: 35rpx;
+  color: black;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #f09873;
+}
+
+.couponlist{
+  height: 180rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20rpx;
+  background-color: #ffffff;
+  margin: 15rpx 15rpx 15rpx 15rpx;
+  box-shadow: 0rpx 15rpx 10rpx -15rpx;
+}
+.couponImg{
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 20rpx;
+}
+.couponInfo{
+  display: flex;
+  flex-direction: column;
+  width: 360rpx;
+  margin-left: 10rpx;
+}
+.couponname{
+  font-size: 35rpx;
+  font-weight: 500;
+  color: black;
+  justify-content: flex-start;
+  margin-top: 10rpx;
+}
+.time{
+  font-size: 25rpx;
+  color: black;
+  justify-content: flex-start;
+  margin-top: 35rpx;
+}
+
+.youhuiPrice{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20rpx;
+}
+.price{
+  display: flex;
+  justify-content: center;
+}
+.number{
+  font-size: 50rpx;
+  color: #f09873;
+  text-align: center;
+  align-items: center;
+}
+.yuan{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 25rpx;
+  color: black;
+  margin-left: 10rpx;
+  margin-top: 15rpx;
+}
+.manjianText{
+  font-size: 25rpx;
+  color: black;
+}
+
+
+.couponnamea{
+  font-size: 35rpx;
+  font-weight: 500;
+  color: gray;
+  justify-content: flex-start;
+  margin-top: 10rpx;
+}
+.timea{
+  font-size: 25rpx;
+  color: gray;
+  justify-content: flex-start;
+  margin-top: 35rpx;
+}
+.numbera{
+  font-size: 50rpx;
+  color: gray;
+  text-align: center;
+  align-items: center;
+}
+.yuana{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 25rpx;
+  color: gray;
+  margin-left: 10rpx;
+  margin-top: 15rpx;
+}
+.manjianTexta{
+  font-size: 25rpx;
+  color: gray;
+}
+/* 底部滚动列表 */
+.contentBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ }
+ .tab-right {
+  width: 100%;
+  margin: 20rpx auto;
+  height: 1150rpx;
+ }
+ .right-item {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+ }
+ .content-item {
+  height: 120rpx;
+  width: 100%;
+ }
+
+
+
+ .yiguoqi{
+  width: 100%;
+  height: 1100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nocouponImg{
+  width: 300rpx;
+  height: 300rpx;
+}
+.nocouponText{
+  height: 50rpx;
+  font-size: 30rpx;
+  vertical-align: middle;
+  color: #918d8b;
+}

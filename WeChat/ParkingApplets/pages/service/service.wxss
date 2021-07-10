@@ -1,0 +1,51 @@
+.titles{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+.title{
+  font-size: 16px;
+  font-weight: 600;
+  margin: 30rpx 0 0 20rpx;
+}
+.title::after{
+  content: "";
+  width: 10rpx;
+  height: 35rpx;
+  background: #a4a7ad;
+  position: absolute;
+  margin: 7rpx 0 0 10rpx;
+}
+.allKinds{
+  height: 160rpx;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20rpx;
+  background-color: #f5f8ff;
+  margin: 10rpx 15rpx 15rpx 15rpx;
+  box-shadow: 0rpx 15rpx 10rpx -15rpx;
+}
+.kinds{
+  text-align: center;
+  width:25%;
+  height:100rpx;
+}
+.kinds image{
+  margin-top: 30rpx;
+  width: 50rpx;
+  height: 60rpx;
+}
+.kindtext{
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5rpx;
+}
+.allKinds3{
+  height: 330rpx;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20rpx;
+  background-color: #f5f8ff;
+  margin: 10rpx 15rpx 15rpx 15rpx;
+  box-shadow: 0rpx 15rpx 10rpx -15rpx;
+}

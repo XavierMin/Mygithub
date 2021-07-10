@@ -1,0 +1,72 @@
+/* indexpages/calculator/calculator.wxss */
+
+.container{
+  width: 100%;
+  height:100%;
+  /*垂直的弹性布局*/
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  box-sizing: border-box;
+  background:white;
+  background-repeat: repeat;
+  padding: 30rpx;
+}
+/*显示屏的样式*/
+.screen{
+  width:680rpx;
+  height:480rpx;
+  line-height: 145rpx;
+  padding-right: 30rpx;
+  margin-bottom: 30rpx;
+  background-color: #fbc32e;
+  border-radius: 3px;
+  text-align: right;
+}
+/*显示屏里的第一部分，计划用来放计算的式子*/
+.cal-view{
+   height:140rpx;
+   color:grey;
+   /*border:1px white solid;*/
+   margin-top:60px;
+}
+/*显示屏的第二部分，用来放输入的按键*/
+.result-view{
+    font-size:50px;
+    color:white;
+}
+/*下面的按钮用一个btns的view包裹，设置成水平方向的弹性布局，
+*将按钮分成四列，也就是四个btnGroup
+*/
+.btns{
+  display: flex;
+  flex-direction: row;
+}
+/*每一列按钮又重新布局*/
+.btnGroup{
+  display:flex;
+  flex-direction: column;
+}
+/*按钮的样式*/
+.btnItem{
+  width:160rpx;
+  height:100rpx;
+  margin:10rpx;
+  border-radius:5px;
+  text-align: center;
+  line-height: 100rpx;
+}
+.btnColor{
+  color:#838383;
+  border:solid 1px #dbdbdb;
+  background:#efefef;
+}
+/*等于号和清屏按钮的特殊样式*/
+.equal{
+  line-height: 230rpx;
+  height:225rpx;
+}
+.acbtn,.equal{
+  color:#fbc32e;
+}

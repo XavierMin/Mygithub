@@ -1,0 +1,85 @@
+<!-- 最近使用横排图标 -->
+<view class='titles'>
+  <text class='title'>最近使用</text>
+</view>
+<view class='allKinds'>
+  <view class='kinds'>
+    <image src="../../static/service11.png"></image>
+    <view class='kindtext'>加油站</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service12.png"></image>
+    <view class='kindtext'>充电站</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service13.png"></image>
+    <view class='kindtext'>账户充值</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service14.png"></image>
+    <view class='kindtext'>违章查缴</view>
+  </view>
+</view>
+
+<!-- 日常必备横排图标 -->
+<view class='titles'>
+  <text class='title'>日常必备</text>
+</view>
+<view class='allKinds'>
+  <view class='kinds'>
+    <image src="../../static/service21.png"></image>
+    <view class='kindtext'>洗车保养</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service22.png"></image>
+    <view class='kindtext'>车位长租</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service23.png"></image>
+    <view class='kindtext'>权益中心</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service24.png"></image>
+    <view class='kindtext'>违章举报</view>
+  </view>
+</view>
+
+<!-- 车主服务横排图标 -->
+<view class='titles'>
+  <text class='title'>车主服务</text>
+</view>
+<view class='allKinds3'>
+  <view class='kinds'>
+    <image src="../../static/service31.png"></image>
+    <view class='kindtext'>二手车</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service32.png"></image>
+    <view class='kindtext'>代驾</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service33.png"></image>
+    <view class='kindtext'>道路救援</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service34.png"></image>
+    <view class='kindtext'>车险</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service35.png"></image>
+    <view class='kindtext'>车检</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service36.png"></image>
+    <view class='kindtext'>路况查询</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service37.png"></image>
+    <view class='kindtext'>交通出行</view>
+  </view>
+  <view class='kinds'>
+    <image src="../../static/service38.png"></image>
+    <view class='kindtext'>更多</view>
+  </view>
+</view>
+

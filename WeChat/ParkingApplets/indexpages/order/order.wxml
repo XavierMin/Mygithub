@@ -1,0 +1,55 @@
+<!--pages/order/order.wxml-->
+<view class='main'>
+  <view class='parkingInfo'>
+    <view class='parkInfoListContent parkingInfoStyle'>
+      <view class='parkInfoText'>停车场</view>
+      <picker bindchange="bindParkChange" value="{{parkindex}}" range-key='{{"parkname"}}' range="{{parkArray}}" mode="selector">  
+        <view class="picker">{{parkindex != "请选择" ? parkArray[parkindex].parkname : "请选择"}} ></view>
+      </picker>
+    </view>
+    <view class='parkInfoListContent parkingInfoStyle'>
+      <view class='parkInfoText'>车牌</view>
+      <picker bindchange="bindCarChange" value="{{carindex}}" range-key='{{"carname"}}' range="{{carArray}}" mode="selector">  
+        <view class="picker">{{carindex != "请选择" ? carArray[carindex].carname : "请选择"}} ></view>
+      </picker>
+    </view>
+  </view>
+  <view class='parkInfoList'>
+    <view class='parkInfoListContent'>
+      <view class='parkInfoText'>日期</view>
+      <picker mode="date" value="{{date}}" start="1978-01-01" end="2099-01-01" bindchange="bindDateChange">  
+        <view class="picker">{{dates}} ></view>  
+      </picker> 
+    </view>
+    <view class='parkInfoListContent'>
+      <view class='parkInfoText'>入场时间</view>
+      <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindInTimeChange">  
+        <view class="picker">{{intime != "请选择入场时间" ? intime : "请选择入场时间"}} ></view>  
+      </picker>
+    </view>
+    <view class='parkInfoListContent'>
+      <view class='parkInfoText'>离场时间</view>
+      <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindOutTimeChange">  
+        <view class="picker">{{outtime != "请选择离场时间" ? outtime : "请选择离场时间"}} ></view>  
+      </picker>
+    </view>
+  </view>
+  <view class='couSetting'>
+    <view class='parkInfoListContent couSettingStyle'>
+      <view class='parkInfoText'>优惠券</view>
+      <picker bindchange="bindCouponChange" value="{{couponindex}}" range-key='{{"couponname"}}' range="{{couponArray}}" mode = "selector">  
+        <view class="picker">{{couponindex != "请选择优惠券" ? couponArray[couponindex].couponname : "请选择优惠券"}} ></view>
+      </picker>
+    </view>
+  </view>
+  <view class='tips'>
+      <text class='tipsInfo'>温馨提示</text>
+      <text class='tipsInfoText'>1. 订单下达15分钟内可免费取消，在约定时间内未入场，订单将自动开始计费，且保留车位15分钟。</text>
+      <text class='tipsInfoText'>2. 超出车位预约时间的部分按单价3倍收取服务费(20元封顶)。</text>
+      <text class='tipsInfoText'>3. 实际收费价格以实际车位为准。</text>
+  </view>
+  <button class="orderBtn" bindtap='orderParking' style="background: #6194f2; color: #fff;" type="default">立即预约</button>
+</view>
+
+
+

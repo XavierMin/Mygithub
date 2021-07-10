@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/nearby/nearby",
+    "pages/service/service",
+    "pages/carcircle/carcircle",
+    "pages/addcar/addcar"
+  ],
+  "subPackages": [
+    {
+      "root": "minepages",
+      "pages": [
+        "mywallet/mywallet",
+        "mycoupon/mycoupon",
+        "setting/setting"
+      ]
+    },
+    {
+      "root": "indexpages",
+      "pages": [
+        "order/order",
+        "payment/payment",
+        "mycar/mycar",
+        "parkrecord/parkrecord",
+        "findcar/findcar",
+        "calculator/calculator"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTitleText": "去哪儿停车"
+  },
+  "tabBar": {
+    "selectedColor": "#E64D1A",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./static/oneOff.png",
+        "selectedIconPath": "./static/oneOn.png"
+      },
+      {
+        "pagePath": "pages/nearby/nearby",
+        "text": "附近",
+        "iconPath": "./static/twoOff.png",
+        "selectedIconPath": "./static/twoOn.png"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "text": "服务",
+        "iconPath": "./static/threeOff.png",
+        "selectedIconPath": "./static/threeOn.png"
+      },
+      {
+        "pagePath": "pages/carcircle/carcircle",
+        "text": "车友圈",
+        "iconPath": "./static/fourOff.png",
+        "selectedIconPath": "./static/fourOn.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./static/fiveOff.png",
+        "selectedIconPath": "./static/fiveOn.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

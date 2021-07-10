@@ -1,0 +1,139 @@
+<!--pages/mycar/mycar.wxml-->
+<view>
+  <!-- 输入车牌信息 -->
+  <swiper class="swiperInfo" indicator-dots indicator-color="rgb(195,195,195)" indicator-active-color="#fa7b50">
+    <swiper-item>
+      <view class="showcar">
+        <image class="carImg" src='../../static/carImage.png'></image>
+      </view>
+      <view class="addcarhint">
+        <image class="addcarImg" src='../../static/tianjia.png'></image>
+        <view class='addcarText'>添加车牌</view>
+      </view>
+      <view class='myInfoList'>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>车牌号码：</view>
+          <view class='chepaiInput' bindtap='gotoaddcar'>请输入车牌号</view>
+        </view>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>选择车型：</view>
+          <view class='pickerPart'>
+            <picker bindchange="bindCarChange" value="{{index}}" range="{{array}}">
+              {{index != "请选择" ? array[index] : "请选择"}}
+            </picker>
+          </view>          
+        </view>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>身份认证：</view>
+          <view class='IDcardText'>请输入身份证号</view>
+        </view>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>手机号码：</view>
+          <view class='IDcardText'>请输入手机号</view>
+        </view>       
+      </view>
+      <button class="carNumberBtn" bindtap='addCarNumber' style="background: #6194f2; color: #fff;" type="default">完成绑定</button>
+    </swiper-item>
+
+    <swiper-item>
+      <view class="showcar">
+        <image class="carImg" src='../../static/aodibiao.png'></image>
+      </view>
+      <view class="chepaiInfo">
+        <view class='chepaiText'>苏E 12345</view>
+        <view class='addcarText'>奥迪 A6L</view>
+      </view>
+      <view class='myInfoList'>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>登记日期：</view>
+          <view class='chepaiInput'>2021-07-08</view>
+        </view>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>修改车型：</view>
+          <view class='pickerPart'>
+            <picker bindchange="bindCarChange" value="{{index}}" range="{{array}}">
+              {{index != "请选择" ? array[index] : "小型汽车"}}
+            </picker>
+          </view>          
+        </view>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>认证状态：</view>
+          <view class='IDcardText'>已认证</view>
+        </view>   
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>手机号码：</view>
+          <view class='IDcardText'>***********</view>
+        </view>   
+      </view>
+      <button class="carNumberBtn" bindtap='addCarNumber' style="background: #6194f2; color: #fff;" type="default">解除绑定</button>
+    </swiper-item>
+    
+    <swiper-item>
+      <view class="showcar">
+        <image class="carImg" src='../../static/baomabiao.png'></image>
+      </view>
+      <view class="chepaiInfo">
+        <view class='chepaiText'>晥G 66666</view>
+        <view class='addcarText'>宝马 X5</view>
+      </view>
+      <view class='myInfoList'>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>登记日期：</view>
+          <view class='chepaiInput'>2021-07-08</view>
+        </view>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>修改车型：</view>
+          <view class='pickerPart'>
+            <picker bindchange="bindCarChange" value="{{index}}" range="{{array}}">
+              {{index != "请选择" ? array[index] : "新能源汽车"}}
+            </picker>
+          </view>          
+        </view>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>认证状态：</view>
+          <view class='IDcardText'>已认证</view>
+        </view>   
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>手机号码：</view>
+          <view class='IDcardText'>***********</view>
+        </view>      
+      </view>
+      <button class="carNumberBtn" bindtap='addCarNumber' style="background: #6194f2; color: #fff;" type="default">解除绑定</button>
+    </swiper-item>
+
+    <swiper-item>
+      <view class="showcar">
+        <image class="carImg" src='../../static/benchibiao.png'></image>
+      </view>
+      <view class="chepaiInfo">
+        <view class='chepaiText'>鄂A 88888</view>
+        <view class='addcarText'>奔驰 E525</view>
+      </view>
+      <view class='myInfoList'>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>登记日期：</view>
+          <view class='chepaiInput'>2021-07-08</view>
+        </view>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>修改车型：</view>
+          <view class='pickerPart'>
+            <picker bindchange="bindCarChange" value="{{index}}" range="{{array}}">
+              {{index != "请选择" ? array[index] : "小型汽车"}}
+            </picker>
+          </view>          
+        </view>
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>认证状态：</view>
+          <view class='IDcardText'>未认证</view>
+        </view>   
+        <view class='myInfoListContent'>
+          <view class='myInfoText'>手机号码：</view>
+          <view class='IDcardText'>***********</view>
+        </view>     
+      </view>
+      <button class="carNumberBtn" bindtap='addCarNumber' style="background: #6194f2; color: #fff;" type="default">解除绑定</button>
+    </swiper-item>
+  </swiper>
+</view>
+
+

@@ -1,0 +1,139 @@
+/* pages/mycar/mycar.wxss */
+page{
+  background: #E3E3E3;
+  height: 100%;
+}
+.showcar{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  background-color: #f09873;
+}
+.carImg{
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 50rpx;
+}
+.addcarhint{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 0;
+  font-size: 35rpx;
+  background-color: #f09873;
+}
+.addcarImg{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 15rpx;
+}
+.addcarText{
+  display: inline-block;
+  height: 50rpx;
+  font-size: 33rpx;
+  color: #ffffff;
+  vertical-align: middle;
+  margin-top: 10rpx;
+}
+.chepaiInfo{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 0;
+  font-size: 35rpx;
+  background-color: #f09873;
+}
+.chepaiText{
+  display: inline-block;
+  height: 50rpx;
+  font-size: 43rpx;
+  font-weight: 800;
+  color: #ffffff;
+  vertical-align: middle;
+  margin-top: 10rpx;
+}
+/* 添加页 */
+.myInfoText{
+  display: inline-block;
+  height: 50rpx;
+  font-size: 33rpx;
+  vertical-align: middle;
+  margin-top: 10rpx;
+}
+.pickerPart{
+  height: 50rpx;
+  font-size: 32rpx;
+  vertical-align: middle;
+  margin-top: 10rpx;
+  color: #918d8b;
+}
+.chepaiInput{
+  height: 50rpx;
+  font-size: 32rpx;
+  vertical-align: middle;
+  margin-top: 10rpx;
+  color: #918d8b;
+}
+.IDcardText{
+  height: 50rpx;
+  font-size: 32rpx;
+  vertical-align: middle;
+  margin-top: 10rpx;
+  color: #918d8b;
+}
+.myInfoList{
+  width: 100%;
+  margin-top: 15rpx;
+  background-color: white;
+}
+.myInfoList:last-child{
+  border: 0;
+}
+.myInfoListContent{
+  width: 90%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 20rpx 0 0 20rpx;
+  font-size:30rpx;
+  border-bottom: 1px solid #EBEBEB;
+  margin: 0 20rpx 0 20rpx;
+}
+
+.swiperInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 90%;
+  height: 1100rpx;
+  border-radius: 20rpx;
+  margin: 40rpx 0 15rpx 35rpx;
+  box-shadow: 0rpx 15rpx 10rpx -15rpx;
+  
+}
+/* 完成绑定按钮 */
+.carNumberBtn{
+  width: 50%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20rpx;
+  margin-top: 100rpx;
+}
+
+
+
+

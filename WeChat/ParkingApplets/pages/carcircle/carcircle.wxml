@@ -1,0 +1,28 @@
+<import src='/pages/template/list-discover.wxml'/>
+<view class='carnewslist'>
+  <!-- 车友圈横排图标 -->
+  <view class='allKinds'>
+    <view class='kinds'>
+      <image src="../../static/tuijian.png"></image>
+      <view class='kindtext'>推荐</view>
+    </view>
+    <view class='kinds'>
+      <image src="../../static/jingxuan.png"></image>
+      <view class='kindtext'>精选</view>
+    </view>
+    <view class='kinds'>
+      <image src="../../static/hangye.png"></image>
+      <view class='kindtext'>行业</view>
+    </view>
+    <view class='kinds'>
+      <image src="../../static/huati.png"></image>
+      <view class='kindtext'>话题</view>
+    </view>
+  </view>
+
+  <view class='discover'>
+    <block wx:for='{{list}}' wx:key='{{index}}'>
+      <template is='discoverItem' data='{{...item}}'></template>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,94 @@
+<view>
+  <!-- 首页搜索框 -->
+  <view class='searchGoodbg'>
+    <view  class='searchGood'>
+      <image class="sousuo" src='../../static/sousuo.svg'></image>
+      <text class='searchText'>搜索附近停车场</text>
+    </view>
+  </view>
+  <!-- 首页天气信息 -->
+  <view class='basicInfo'>
+    <view  class='location'>
+      <image class="locaImg" src='../../static/location_main.png'></image>
+      <text class='locaText'>武汉</text>
+    </view>
+    <view  class='weather'>
+      <view class='weatherup'>
+        <image class="weatherImg" src='../../static/weather_main.png'></image>
+        <text class='weatherText'>晴</text>
+      </view>
+      <text class='tempText'>30℃</text>
+    </view>
+    <view  class='airQuality'>
+      <text class='airText'>空气质量</text>
+      <text class='airText'>优</text>
+    </view>
+  </view>
+  <!-- 首页轮播图 -->
+  <swiper indicator-dots autoplay circular indicator-color="rgb(195,195,195)" indicator-active-color="white">
+    <swiper-item><image class="swiperImg" src='../../static/image1_main.jpg'></image>
+    </swiper-item>
+    <swiper-item><image class="swiperImg"   src='../../static/image2_main.jpg'></image>
+    </swiper-item>
+    <swiper-item><image class="swiperImg"  src='../../static/image3_main.jpg'></image>
+    </swiper-item>
+  </swiper>
+   <!-- 首页六个导航菜单 -->
+  <view class='row'>
+    <view class='one' bindtap='gotoorder'>
+      <view><image class="imgIcon" src='../../static/one1.png'></image></view>
+      <view class='navText'>
+        <text class='upText'>预约车位</text>
+        <text class='downText'>智慧出行，智慧停车</text>
+      </view>
+    </view>
+    <view class='two' bindtap='gotopayment'>
+      <view><image class="imgIcon" src='../../static/one2.png'></image></view>
+      <view class='navText'>
+        <text class='upText'>立即缴费</text>
+        <text class='downText'>智慧出行，智慧停车</text>
+      </view>
+    </view>
+  </view>
+  <view class='row'>
+    <view class='one' bindtap='gotomycar'>
+      <view><image class="imgIcon" src='../../static/two1.png'></image></view>
+      <view class='navText'>
+        <text class='upText'>车牌管理</text>
+        <text class='downText'>智慧出行，智慧停车</text>
+      </view>
+    </view>
+    <view class='two' bindtap='gotoparkrecord'>
+      <view><image class="imgIcon" src='../../static/two2.png'></image></view>
+      <view class='navText'>
+        <text class='upText'>停车记录</text>
+        <text class='downText'>智慧出行，智慧停车</text>
+      </view>
+    </view>
+  </view>
+  <view class='row'>
+    <view class='one' bindtap='gotofindcar'>
+      <view><image class="imgIcon" src='../../static/three1.png'></image></view>
+      <view class='navText'>
+        <text class='upText'>智能寻车</text>
+        <text class='downText'>智慧出行，智慧停车</text>
+      </view>
+    </view>
+    <view class='two' bindtap='gotocalculator'>
+      <view><image class="imgIcon" src='../../static/three2.png'></image></view>
+      <view class='navText'>
+        <text class='upText'>费用计算</text>
+        <text class='downText'>智慧出行，智慧停车</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- END -->
+  <view class="end">
+     <view class="endLine"></view>
+     <text class='endText'>END</text>
+     <view class="endLine"></view>
+  </view>
+
+</view>
+

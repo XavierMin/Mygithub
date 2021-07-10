@@ -1,0 +1,7 @@
+<template name="discoverItem">
+  <view class='content'>
+    <text class='newstitles'>{{newstitle}}</text>              
+    <image class='contentImg'  src='{{img}}'></image>
+    <text class='subtimes'>{{subtime}}</text>
+  </view>
+</template>

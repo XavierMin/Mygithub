@@ -1,0 +1,75 @@
+<!--pages/mycoupon/mycoupon.wxml-->
+<view>
+  <!--导航条-->
+  <view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </view>
+  <!--未使用-->
+  <view hidden="{{currentTab!==0}}">
+    <view class='contentBottom'>
+      <swiper class="tab-right" style='background:{{bgColor}};' vertical="true"  interval="2000" display-multiple-items='5'>
+        <view class="right-item">
+          <block wx:key="idx" wx:for='{{coupons}}'>
+            <swiper-item>
+              <view class='content-item'>
+                <view class='couponlist'>
+                  <image class="couponImg" src='../../static/coupon.png'></image>
+                  <view class='couponInfo'>
+                    <text class='couponname'>{{item.quanname}}</text>      
+                    <text class='time'>{{item.usetime}}</text>
+                  </view>   
+                  <view class='youhuiPrice'>              
+                    <view class='price'>
+                      <text class='number'>{{item.num}}</text>                    
+                      <view class='yuan'>元</view>                   
+                    </view> 
+                    <text class='manjianText'>{{item.manjian}}</text>
+                  </view>           
+                </view>                               
+              </view>
+            </swiper-item>
+          </block> 
+        </view>
+      </swiper>
+    </view>
+  </view>
+  <!--已使用-->
+  <view hidden="{{currentTab!==1}}">
+    <view class='contentBottom'>
+      <swiper class="tab-right" style='background:{{bgColor}};' vertical="true"  interval="2000" display-multiple-items='5'>
+        <view class="right-item">
+          <block wx:key="idx" wx:for='{{coupons}}'>
+            <swiper-item>
+              <view class='content-item'>
+                <view class='couponlist'>
+                  <image class="couponImg" src='../../static/yishiyong.png'></image>
+                  <view class='couponInfo'>
+                    <text class='couponnamea'>{{item.quanname}}</text>      
+                    <text class='timea'>{{item.usetime}}</text>
+                  </view>   
+                  <view class='youhuiPrice'>              
+                    <view class='price'>
+                      <text class='numbera'>{{item.num}}</text>                    
+                      <view class='yuana'>元</view>                   
+                    </view> 
+                    <text class='manjianTexta'>{{item.manjian}}</text>
+                  </view>           
+                </view>                               
+              </view>
+            </swiper-item>
+          </block> 
+        </view>
+      </swiper>
+    </view>
+  </view>
+  <!--已过期-->
+  <view hidden="{{currentTab!==2}}" class="yiguoqi">
+    <image class="nocouponImg" src='../../static/nocoupon.png'></image>
+    <view class='nocouponText'>没有更多优惠券</view>
+  </view>
+
+</view>
+
+
+
+

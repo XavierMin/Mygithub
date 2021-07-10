@@ -1,0 +1,32 @@
+<view class='home'>
+  <view class='userInfo'>
+    <image class='userAvatar' src='../../static/touxiang.png'></image>
+    <label class='username'>Xavier</label>
+    <label class='bind'>绑定手机号</label>
+    <image class='qrCode' src='../../static/qdcode.png'></image>
+  </view>
+  <view class='mycarInfo' bindtap='gotomycar'>
+    <image class='homeImg' src='../../static/chepai.png'></image>
+    <view class='myInfoText'>车牌管理</view>
+  </view>
+  <view class='myInfoList'>
+    <view class='myInfoListContent' bindtap='gotoparkrecord'>
+      <image class='homeImg' src='../../static/jilu.png'></image>
+      <view class='myInfoText'>停车记录</view>
+    </view>
+    <view class='myInfoListContent' bindtap='gotomywallet'>
+      <image class='homeImg' src='../../static/qianbao.png'></image>
+      <view class='myInfoText'>我的钱包</view>
+    </view>
+    <view class='myInfoListContent' bindtap='gotomycoupon'>
+      <image class='homeImg' src='../../static/youhuiquan.png'></image>
+      <view class='myInfoText'>我的优惠券</view>
+    </view>
+  </view>
+  <view class='setting' bindtap='gotomysetting'>
+    <view class='myInfoListContent settingStyle'>
+      <image class='homeImg' src='../../static/shezhi.png'></image>
+      <view class='myInfoText'>设置</view>
+    </view>
+  </view>
+</view>

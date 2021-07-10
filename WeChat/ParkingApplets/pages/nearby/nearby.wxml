@@ -1,0 +1,58 @@
+<view>
+  <!-- 首页搜索框 -->
+  <view class='searchGoodbg'>
+    <view  class='searchGood'>
+      <image class="sousuo" src='../../static/sousuo.svg'></image>
+      <text class='searchText'>搜索附近停车场</text>
+    </view>
+  </view>
+  <!-- 首页天气信息 -->
+  <view class='basicInfo'>
+    <view  class='location'>
+      <image class="locaImg" src='../../static/location_main.png'></image>
+      <text class='locaText'>武汉</text>
+    </view>
+    <view  class='weather'>
+      <view class='weatherup'>
+        <image class="weatherImg" src='../../static/weather_main.png'></image>
+        <text class='weatherText'>晴</text>
+      </view>
+      <text class='tempText'>30℃</text>
+    </view>
+    <view  class='airQuality'>
+      <text class='airText'>空气质量</text>
+      <text class='airText'>优</text>
+    </view>
+  </view>
+
+  <!-- 滚轮 -->
+  <view class='contentBottom'>
+      <swiper class="tab-right" style='background:{{bgColor}};' vertical="true"  interval="2000" display-multiple-items='5'>
+        <view class="right-item">
+          <block wx:key="idx" wx:for='{{bb}}'>
+            <swiper-item>
+              <view class='content-item'>
+                <view class='parklist'>
+                  <view class='parkinfo'>
+                    <view class='nameAdis'>
+                      <text class='parkname'>{{item.parkingname}}</text>
+                      <text class='distance'>{{item.dis}}m</text>
+                    </view>
+                    <text class='charge'>{{item.charging}}</text>
+                  </view>
+                  <view class="divLine"></view>
+                  <view class='parkstatus'>
+                    <text class='number'>{{item.num}}</text>
+                    <text class='status'>{{item.sta}}</text>
+                  </view>
+                </view>                
+              </view>
+            </swiper-item>
+          </block> 
+        </view>
+      </swiper>
+  </view>
+</view>
+
+
+

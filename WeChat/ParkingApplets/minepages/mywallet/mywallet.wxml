@@ -1,0 +1,33 @@
+<!--pages/mywallet/mywallet.wxml-->
+<view class='walletpage'>
+  <view  class='searchGood'>
+    <image class="yueImg" src='../../static/yue.png'></image>
+    <text class='yueText'>账户余额(元)</text>
+    <text class='myyueText'>¥ 888.88</text>
+  </view>
+  <view class='mycarInfo'>
+    <image class='homeImg' src='../../static/zhangdan.png'></image>
+    <view class='myInfoText'>账单明细</view>
+  </view>
+  <view class='myInfoList'>
+    <view class='myInfoListContent'>
+      <image class='homeImg' src='../../static/chongzhi.png'></image>
+      <view class='myInfoText'>充值</view>
+    </view>
+    <view class='myInfoListContent'>
+      <image class='homeImg' src='../../static/tixian.png'></image>
+      <view class='myInfoText'>提现</view>
+    </view>
+    <view class='myInfoListContent'>
+      <image class='homeImg' src='../../static/fapiao.png'></image>
+      <view class='myInfoText'>发票</view>
+    </view>
+  </view>
+  <view class='setting'>
+    <view class='myInfoListContent settingStyle'>
+      <image class='homeImg' src='../../static/payshezhi.png'></image>
+      <view class='myInfoText'>支付设置</view>
+    </view>
+  </view>
+</view>
+
